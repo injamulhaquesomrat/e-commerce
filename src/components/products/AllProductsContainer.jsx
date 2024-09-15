@@ -2,6 +2,15 @@
 import React, { useEffect, useState } from "react";
 import ProductSearch from "./ProductSearch";
 import AllProducts from "./AllProducts";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "../ui/pagination";
 
 const AllProductsContainer = () => {
   const [search, setSearch] = useState("");
@@ -25,9 +34,35 @@ const AllProductsContainer = () => {
   }, [search]);
 
   return (
-    <div>
+    <div className="mt-6">
       <ProductSearch handleSubmit={handleSubmit} />
       <AllProducts allProducts={products} />
+      <div className="mt-10">
+        <Pagination>
+          <PaginationContent>
+            <PaginationItem>
+              <PaginationPrevious href="#" />
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#" isActive>
+                1
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#">2</PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#">3</PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationEllipsis />
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationNext href="#" />
+            </PaginationItem>
+          </PaginationContent>
+        </Pagination>
+      </div>
     </div>
   );
 };

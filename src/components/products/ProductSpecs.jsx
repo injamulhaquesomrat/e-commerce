@@ -74,6 +74,7 @@ const ProductSpecs = ({ product }) => {
         </div>
         <Button>Add to cart</Button>
         <Button>Buy Now</Button>
+        <Button>Add to favourites</Button>
       </div>
     </div>
   );
