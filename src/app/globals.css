@@ -67,3 +67,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.splide .splide__pagination__page.is-active {
+  background: hsl(var(--primary));
+}

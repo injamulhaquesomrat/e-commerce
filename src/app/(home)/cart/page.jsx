@@ -9,7 +9,7 @@ const CartPage = () => {
     <>
       <Navbar />
       <Container>
-        <h6 className="text-3xl text-center py-4">Shopping Cart</h6>
+        <h6 className="text-3xl text-center py-10 font-bold">Shopping Cart</h6>
         <CartContainer />
       </Container>
       <Footer />

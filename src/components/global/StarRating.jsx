@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 
 const StarRating = ({ defaultRating = 0, size = 16 }) => {
   return (
-    <div className="inline-flex items-center gap-2">
+    <div className="inline-flex flex-wrap items-center gap-2">
       <div className="star-rating flex gap-1">
         {[...Array(5)].map((star, index) => {
           const currentRating = index + 1;

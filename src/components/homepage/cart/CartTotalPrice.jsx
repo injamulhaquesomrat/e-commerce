@@ -4,16 +4,15 @@ import React from "react";
 
 const CartTotalPrice = () => {
   return (
-    <div className="grid grid-cols-12 justify-between gap-4">
-      <div className="col-span-12 md:col-span-6 lg:col-span-4">
+    <div className="flex flex-col-reverse md:flex-row justify-between gap-8">
+      <div className="md:basis-5/12 lg:basis-4/12">
         <h6 className="text-2xl mb-4">Using A Promo?</h6>
         <div className="flex w-full max-w-sm items-center space-x-2">
           <Input type="text" placeholder="Enter coupon code" />
           <Button type="submit">Apply</Button>
         </div>
       </div>
-      <div className="col-span-4"></div>
-      <div className="col-span-12 md:col-span-6 lg:col-span-4">
+      <div className="md:basis-6/12 lg:basis-4/12">
         <h6 className="mb-4 text-2xl font-medium">Cart Totals</h6>
         <div className="flex justify-between items-center">
           <b>Subtotal:</b>

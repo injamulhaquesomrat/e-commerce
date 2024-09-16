@@ -154,3 +154,36 @@ export const fakeCategoriesData = [
     title: "Product J",
   },
 ];
+
+export const dummyFeaturedBrands = [
+  {
+    id: 1,
+    thumbnail: "https://via.placeholder.com/600x400.png?text=Brand+One",
+    brandName: "Brand One",
+    brandOffer: "Up to 50% off on all items",
+  },
+  {
+    id: 2,
+    thumbnail: "https://via.placeholder.com/600x400.png?text=Brand+Two",
+    brandName: "Brand Two",
+    brandOffer: "Buy 1 Get 1 Free",
+  },
+  {
+    id: 3,
+    thumbnail: "https://via.placeholder.com/600x400.png?text=Brand+Three",
+    brandName: "Brand Three",
+    brandOffer: "30% off on your first purchase",
+  },
+  {
+    id: 4,
+    thumbnail: "https://via.placeholder.com/600x400.png?text=Brand+Four",
+    brandName: "Brand Four",
+    brandOffer: "Up to 40% off on selected items",
+  },
+  {
+    id: 5,
+    thumbnail: "https://via.placeholder.com/600x400.png?text=Brand+Five",
+    brandName: "Brand Five",
+    brandOffer: "Free shipping on orders over $100",
+  },
+];

@@ -16,12 +16,6 @@ const AllProductsContainer = () => {
   const [search, setSearch] = useState("");
   const [products, setProducts] = useState([]);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setSearch(event.target.productSearch.value);
-    event.target.reset();
-  };
-
   useEffect(() => {
     const allProducts = async () => {
       const res = await fetch(
@@ -32,6 +26,12 @@ const AllProductsContainer = () => {
     };
     allProducts();
   }, [search]);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setSearch(event.target.productSearch.value);
+    event.target.reset();
+  };
 
   return (
     <div className="mt-6">

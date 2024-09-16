@@ -2,13 +2,14 @@ import React from "react";
 import CartContainerTable from "./CartContainerTable";
 import CartTotalPrice from "./CartTotalPrice";
 import { fakeCartData } from "@/lib/fake-data";
+import ProductSuggestions from "./ProductSuggestions";
 
 const CartContainer = () => {
   return (
-    <div>
+    <div className="space-y-10">
       <CartContainerTable fakeCartData={fakeCartData} />
-      <hr className="my-10" />
       <CartTotalPrice />
+      <ProductSuggestions />
     </div>
   );
 };
