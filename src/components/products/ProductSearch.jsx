@@ -12,7 +12,9 @@ const ProductSearch = ({ handleSubmit, handleInput }) => {
             placeholder="Search Product"
             name="productSearch"
           />
-          <Button type="submit">Search</Button>
+          <Button className="min-w-24" type="submit">
+            Search
+          </Button>
         </div>
       </form>
     </div>

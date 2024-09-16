@@ -1,3 +1,16 @@
+import {
+  Apple,
+  Cake,
+  Candy,
+  Grape,
+  Ham,
+  Lollipop,
+  Milk,
+  Pizza,
+  Salad,
+  Soup,
+} from "lucide-react";
+
 export const navItems = [
   {
     id: 1,
@@ -86,5 +99,58 @@ export const fakeCartData = [
     price: 100.0,
     buyingQuantity: 4,
     total: 400.0,
+  },
+];
+
+export const fakeCategoriesData = [
+  {
+    id: 1,
+    icon: Apple,
+    title: "Product A",
+  },
+  {
+    id: 2,
+    icon: Cake,
+    title: "Product B",
+  },
+  {
+    id: 3,
+    icon: Lollipop,
+    title: "Product C",
+  },
+  {
+    id: 4,
+    icon: Milk,
+    title: "Product D",
+  },
+  {
+    id: 5,
+    icon: Pizza,
+    title: "Product E",
+  },
+  {
+    id: 6,
+    icon: Grape,
+    title: "Product F",
+  },
+  {
+    id: 7,
+    icon: Soup,
+    title: "Product G",
+  },
+  {
+    id: 8,
+    icon: Ham,
+    title: "Product H",
+  },
+  {
+    id: 9,
+    icon: Salad,
+    title: "Product I",
+  },
+  {
+    id: 10,
+    icon: Candy,
+    title: "Product J",
   },
 ];

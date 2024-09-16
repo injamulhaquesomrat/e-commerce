@@ -1,28 +1,24 @@
 import React from "react";
-import ProductCard from "./ProductCard";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Container from "@/components/global/Container";
 import { getAllProducts } from "@/actions/getAllProducts";
+import BestSellingCarousel from "./BestSellingCarousel";
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const BestSellingProducts = async () => {
   const allProducts = await getAllProducts();
-
   return (
     <Container className="my-10">
-      <h2 className="pb-10 text-2xl uppercase text-center">
-        Best Selling Products
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {allProducts.slice(0, 8).map((product) => (
-          <div key={product.id} className="col-span-1">
-            <ProductCard product={product} />
-          </div>
-        ))}
-      </div>
+      <h6 className="text-2xl font-semibold mb-6"> Best Selling Products</h6>
+      <BestSellingCarousel products={allProducts} />
       <div className="my-8 text-center">
         <Link href={"/products"}>
-          <Button>See All</Button>
+          <Button className="min-w-32 gap-3 group">
+            See All
+            <FaArrowRightLong className="group-hover:translate-x-2 duration-300" />
+          </Button>
         </Link>
       </div>
     </Container>

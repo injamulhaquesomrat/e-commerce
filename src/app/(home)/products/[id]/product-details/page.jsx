@@ -2,12 +2,9 @@
 import Container from "@/components/global/Container";
 import Footer from "@/components/global/footer/Footer";
 import Navbar from "@/components/global/navbar/Navbar";
-import StarRating from "@/components/global/StarRating";
 import ProductCardCarousel from "@/components/products/ProductCardCarousel";
 import ProductSpecs from "@/components/products/ProductSpecs";
 import ReviewsCarousel from "@/components/products/ReviewsCarousel";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const ProductDetailsPage = ({ params }) => {

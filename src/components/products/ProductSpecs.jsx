@@ -4,23 +4,40 @@ import React, { useState } from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import StarRating from "../global/StarRating";
+import { IoMdHeartEmpty } from "react-icons/io";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../ui/tooltip";
 
 const ProductSpecs = ({ product }) => {
   const [buyingQuantity, setBuyingQuantity] = useState(1);
   return (
     <div>
-      <h2 className="text-2xl font-medium">{product?.title}</h2>
-      <div className="flex items-center gap-3">
-        <small>Brand : {product?.brand}</small>
-        <div>
-          <StarRating defaultRating={product?.rating} />
-        </div>
+      <h2 className="text-2xl font-medium pb-2">{product?.title}</h2>
+      <div className="inline-flex items-center flex-wrap gap-3 w-fit">
+        <small className="col-span-1">Brand : {product?.brand}</small>
+        <StarRating defaultRating={product?.rating} />
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger className="bg-transparent hover:bg-transparent text-gray-400 hover:text-primary text-xl">
+              <IoMdHeartEmpty />
+            </TooltipTrigger>
+            <TooltipContent side="right">
+              <p>Add to favourite</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </div>
-      <hr />
-      <h4 className="text-3xl text-primary font-bold">${product?.price}</h4>
+      <hr className="my-4" />
+      <h4 className="text-3xl text-primary font-bold pb-3">
+        ${product?.price}
+      </h4>
       <p>{product?.description}</p>
-      <h6 className="text-lg font-medium">Specifications</h6>
-      <div className="flex flex-col lg:flex-row justify-between items-center">
+      <h6 className="text-lg font-medium py-3">Product features</h6>
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-5">
         <ul>
           <li>Category : {product?.category}</li>
           <li>Weight : {product?.weight}gm</li>
@@ -45,7 +62,7 @@ const ProductSpecs = ({ product }) => {
             ))}
           </li>
         </ul>
-        <div>
+        <div className="hidden md:block">
           <Image
             src={product?.meta?.qrCode}
             height={200}
@@ -55,8 +72,9 @@ const ProductSpecs = ({ product }) => {
         </div>
       </div>
       <p>Qunatity</p>
+
       <div className="inline-flex gap-3 items-center">
-        <div className="flex border">
+        <div className="inline-flex border">
           <button
             disabled={buyingQuantity === 0}
             className="px-3 py-1 rounded"
@@ -74,7 +92,6 @@ const ProductSpecs = ({ product }) => {
         </div>
         <Button>Add to cart</Button>
         <Button>Buy Now</Button>
-        <Button>Add to favourites</Button>
       </div>
     </div>
   );
