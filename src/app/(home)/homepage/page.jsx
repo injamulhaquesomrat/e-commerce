@@ -1,6 +1,7 @@
 import Footer from "@/components/global/footer/Footer";
 import Header from "@/components/global/navbar/Header";
 import Navbar from "@/components/global/navbar/Navbar";
+import ArticlesContainer from "@/components/homepage/articles/ArticlesContainer";
 import BannersContainer from "@/components/homepage/banners/BannersContainer";
 import BrowseByCategory from "@/components/homepage/browse-by-category/BrowseByCategory";
 import FeatureBrandsContainer from "@/components/homepage/featured-brands/FeatureBrandsContainer";
@@ -20,6 +21,7 @@ const HomePage = () => {
       <BestSellingProducts />
       <BannersContainer />
       <BestSellingProducts />
+      <ArticlesContainer />
       <Footer />
     </div>
   );

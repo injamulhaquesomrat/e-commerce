@@ -187,3 +187,51 @@ export const dummyFeaturedBrands = [
     brandOffer: "Free shipping on orders over $100",
   },
 ];
+
+export const fakeArticlesData = [
+  {
+    id: 1,
+    headline: "Exploring the Future of AI in Healthcare",
+    content:
+      "Artificial Intelligence is rapidly changing the healthcare industry, offering new ways to diagnose and treat diseases more effectively. This article explores the various applications and future possibilities of AI in healthcare.",
+    published_by: "John Doe",
+    subject: "Technology",
+    published_date: "2024-09-01",
+  },
+  {
+    id: 2,
+    headline: "The Importance of Mental Health Awareness",
+    content:
+      "Mental health awareness is crucial in today's fast-paced world. This article discusses the importance of mental well-being and offers strategies to maintain mental health through mindfulness and other practices.",
+    published_by: "Jane Smith",
+    subject: "Health",
+    published_date: "2024-08-15",
+  },
+  {
+    id: 3,
+    headline: "How Climate Change is Affecting Global Agriculture",
+    content:
+      "Climate change is having a profound impact on global agriculture. From changing weather patterns to extreme droughts, this article explores how farmers are coping with these challenges and what the future holds.",
+    published_by: "Emily Johnson",
+    subject: "Environment",
+    published_date: "2024-07-22",
+  },
+  {
+    id: 4,
+    headline: "The Rise of Remote Work: Pros and Cons",
+    content:
+      "Remote work has become increasingly popular, especially after the COVID-19 pandemic. This article looks at the benefits and challenges of remote work for both employees and employers.",
+    published_by: "Michael Brown",
+    subject: "Business",
+    published_date: "2024-06-30",
+  },
+  {
+    id: 5,
+    headline: "The Evolution of Smartphones in the Last Decade",
+    content:
+      "Smartphones have become an integral part of modern life. This article traces the evolution of smartphones over the last decade, focusing on key technological advancements and their impact on society.",
+    published_by: "Sarah Wilson",
+    subject: "Technology",
+    published_date: "2024-05-18",
+  },
+];
