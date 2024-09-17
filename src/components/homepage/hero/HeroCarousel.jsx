@@ -32,8 +32,8 @@ const HeroCarousel = () => {
               className="w-full h-auto object-cover aspect-video lg:aspect-[1600/800]"
               src="/images/hero/hero-one.png"
               alt="Image 1"
-              height={800}
-              width={1600}
+              height={1440}
+              width={2560}
               priority
             />
           </div>
@@ -44,8 +44,8 @@ const HeroCarousel = () => {
               className="w-full h-auto object-cover aspect-video lg:aspect-[1600/800]"
               src="/images/hero/hero-two.png"
               alt="Image 2"
-              height={800}
-              width={1600}
+              height={1440}
+              width={2560}
             />
           </div>
         </SplideSlide>
@@ -55,8 +55,8 @@ const HeroCarousel = () => {
               className="w-full h-auto object-cover aspect-video lg:aspect-[1600/800]"
               src="/images/hero/hero-three.png"
               alt="Image 3"
-              height={800}
-              width={1600}
+              height={1440}
+              width={2560}
             />
           </div>
         </SplideSlide>

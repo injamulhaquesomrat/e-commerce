@@ -10,9 +10,10 @@ const ProductCard = ({ product }) => {
           <Link href={`/products/${product.id}/product-details`}>
             <Image
               className="w-full aspect-square object-contain rounded-md"
-              src={"https://placehold.co/300x300/png"}
-              height={300}
-              width={300}
+              // src={"https://placehold.co/300x300/png"}
+              src={product?.thumbnail}
+              height={900}
+              width={900}
               alt={product.title}
             />
           </Link>

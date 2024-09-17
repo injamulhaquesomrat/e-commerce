@@ -27,8 +27,8 @@ const ProductCardCarousel = ({ productImages }) => {
                 className="w-full h-auto object-cover aspect-square"
                 src={productImage}
                 alt={productImage}
-                height={594}
-                width={594}
+                height={900}
+                width={900}
                 priority
               />
             </div>

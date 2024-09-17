@@ -11,7 +11,7 @@ const BestSellingCarousel = ({ products }) => {
         aria-label="My Favorite Images"
         options={{
           width: "100%",
-          gap: "1.5rem",
+          gap: "1rem",
           pagination: false,
           padding: ".25rem",
           type: "loop",
@@ -25,7 +25,7 @@ const BestSellingCarousel = ({ products }) => {
           perMove: 1,
           mediaQuery: "min",
           breakpoints: {
-            300: { perPage: 1, pagination: true, arrows: false },
+            300: { perPage: 2, pagination: true, arrows: false },
             500: { perPage: 2, pagination: false },
             768: { perPage: 3 },
             1200: { perPage: 4 },

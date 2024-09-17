@@ -15,9 +15,9 @@ const BestSellingProducts = async () => {
       <BestSellingCarousel products={allProducts} />
       <div className="my-8 text-center">
         <Link href={"/products"}>
-          <Button className="min-w-32 gap-3 group">
+          <Button className="min-w-32 gap-2 group">
             All Products
-            <FaArrowRightLong className="group-hover:translate-x-2 duration-300" />
+            <FaArrowRightLong className="group-hover:translate-x-1 duration-300" />
           </Button>
         </Link>
       </div>
