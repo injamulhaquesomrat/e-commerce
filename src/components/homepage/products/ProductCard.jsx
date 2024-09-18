@@ -1,11 +1,18 @@
 import StarRating from "@/components/global/StarRating";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, view }) => {
   return (
     <>
-      <div className="border p-4 md:p-6 flex flex-col gap-4 drop-shadow-md shadow-md duration-500 rounded">
+      <div
+        className={cn(
+          "border p-4 md:p-6 flex gap-4 hover:drop-shadow-md hover:shadow-md duration-300 rounded bg-secondary",
+          view === "grid" && "flex-col",
+          view === "list" && "flex-row"
+        )}
+      >
         <div className="relative">
           <Link href={`/products/${product.id}/product-details`}>
             <Image

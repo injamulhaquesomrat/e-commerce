@@ -11,10 +11,13 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "../ui/pagination";
+import FilterProducts from "./FilterProducts";
+import FilterColumn from "./FilterColumn";
 
 const AllProductsContainer = () => {
   const [search, setSearch] = useState("");
   const [products, setProducts] = useState([]);
+  const [view, setView] = useState("grid");
 
   useEffect(() => {
     const allProducts = async () => {
@@ -33,10 +36,27 @@ const AllProductsContainer = () => {
     event.target.reset();
   };
 
+  const handleView = (value) => {
+    if (value === "grid") {
+      setView("grid");
+    }
+    if (value === "list") {
+      setView("list");
+    }
+  };
+
   return (
     <div className="mt-6">
-      <ProductSearch handleSubmit={handleSubmit} />
-      <AllProducts allProducts={products} />
+      {/* <ProductSearch handleSubmit={handleSubmit} /> */}
+      <FilterProducts
+        handleSubmit={handleSubmit}
+        handleView={handleView}
+        view={view}
+      />
+      <div className="grid grid-cols-12 gap-4">
+        <FilterColumn />
+        <AllProducts allProducts={products} view={view} />
+      </div>
       <div className="mt-10">
         <Pagination>
           <PaginationContent>

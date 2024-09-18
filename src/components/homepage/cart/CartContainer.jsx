@@ -8,6 +8,7 @@ const CartContainer = () => {
   return (
     <div className="space-y-10">
       <CartContainerTable fakeCartData={fakeCartData} />
+      <hr className="hidden md:block" />
       <CartTotalPrice />
       <ProductSuggestions />
     </div>

@@ -1,6 +1,7 @@
 "use client";
 import { fakeCategoriesData } from "@/lib/fake-data";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import Link from "next/link";
 import React from "react";
 import { FaChevronRight } from "react-icons/fa";
 
@@ -34,12 +35,16 @@ const CategoryCarousel = () => {
         <SplideTrack>
           {fakeCategoriesData.map(({ id, title, icon: Icon }) => (
             <SplideSlide className="pb-10" key={id}>
-              <div className="min-h-40 flex flex-col items-center justify-center gap-4 border duration-300 p-4 shadow-xl rounded-md">
-                <div>
-                  <Icon className="w-10 h-10 mx-auto" />
+              <Link href="#">
+                <div className="min-h-40 flex flex-col items-center justify-center gap-4 duration-300 p-4 hover:shadow-xl bg-secondary rounded-md group">
+                  <div>
+                    <Icon className="w-10 h-10 mx-auto" />
+                  </div>
+                  <p className="text-center font-semibold group-hover:text-primary">
+                    {title}
+                  </p>
                 </div>
-                <p className="text-center font-semibold">{title}</p>
-              </div>
+              </Link>
             </SplideSlide>
           ))}
         </SplideTrack>

@@ -235,3 +235,106 @@ export const fakeArticlesData = [
     published_date: "2024-05-18",
   },
 ];
+
+export const fakeProductCategory = [
+  {
+    id: 1,
+    category: "Electronics",
+    icon: "FiMonitor",
+    subcategory: [
+      { id: 1.1, name: "Laptops" },
+      { id: 1.2, name: "Smartphones" },
+      { id: 1.3, name: "Cameras" },
+    ],
+  },
+  {
+    id: 2,
+    category: "Clothing",
+    icon: "FiShoppingBag",
+    subcategory: [
+      { id: 2.1, name: "Men's Clothing" },
+      { id: 2.2, name: "Women's Clothing" },
+      { id: 2.3, name: "Kids' Clothing" },
+    ],
+  },
+  {
+    id: 3,
+    category: "Home Appliances",
+    icon: "FiFridge",
+    subcategory: [
+      { id: 3.1, name: "Refrigerators" },
+      { id: 3.2, name: "Washing Machines" },
+      { id: 3.3, name: "Microwaves" },
+    ],
+  },
+  {
+    id: 4,
+    category: "Books",
+    icon: "FiBook",
+    subcategory: [
+      { id: 4.1, name: "Fiction" },
+      { id: 4.2, name: "Non-fiction" },
+      { id: 4.3, name: "Comics" },
+    ],
+  },
+  {
+    id: 5,
+    category: "Beauty & Personal Care",
+    icon: "FiHeart",
+    subcategory: [
+      { id: 5.1, name: "Skincare" },
+      { id: 5.2, name: "Makeup" },
+      { id: 5.3, name: "Haircare" },
+    ],
+  },
+  {
+    id: 6,
+    category: "Sports & Outdoors",
+    icon: "FiActivity",
+    subcategory: [
+      { id: 6.1, name: "Fitness Equipment" },
+      { id: 6.2, name: "Outdoor Gear" },
+      { id: 6.3, name: "Team Sports" },
+    ],
+  },
+  {
+    id: 7,
+    category: "Toys & Games",
+    icon: "FiPlay",
+    subcategory: [
+      { id: 7.1, name: "Action Figures" },
+      { id: 7.2, name: "Board Games" },
+      { id: 7.3, name: "Puzzles" },
+    ],
+  },
+  {
+    id: 8,
+    category: "Automotive",
+    icon: "FiTruck",
+    subcategory: [
+      { id: 8.1, name: "Car Accessories" },
+      { id: 8.2, name: "Motorcycle Parts" },
+      { id: 8.3, name: "Tools & Equipment" },
+    ],
+  },
+  {
+    id: 9,
+    category: "Furniture",
+    icon: "FiChair",
+    subcategory: [
+      { id: 9.1, name: "Living Room" },
+      { id: 9.2, name: "Bedroom" },
+      { id: 9.3, name: "Office" },
+    ],
+  },
+  {
+    id: 10,
+    category: "Music",
+    icon: "FiMusic",
+    subcategory: [
+      { id: 10.1, name: "Instruments" },
+      { id: 10.2, name: "Audio Equipment" },
+      { id: 10.3, name: "Sheet Music" },
+    ],
+  },
+];

@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="backdrop-blur-md relative overflow-hidden">
       <Image
-        className="absolute object-cover aspect-video top-0 left-0"
+        className="absolute object-cover aspect-square lg:aspect-video top-0 left-0 h-full"
         src={
           "https://www.ecommerce03.lumensofttech.com/storage/general/slider-bg.jpg"
         }

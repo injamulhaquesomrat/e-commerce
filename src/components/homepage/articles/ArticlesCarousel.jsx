@@ -6,7 +6,7 @@ import ArticleCard from "./ArticleCard";
 
 const ArticlesCarousel = () => {
   return (
-    <div className="border">
+    <div className="border rounded-md">
       <Splide
         hasTrack={false}
         aria-label="My Favorite Images"
@@ -30,7 +30,7 @@ const ArticlesCarousel = () => {
         }}
       >
         <SplideTrack>
-          {fakeArticlesData.slice(0, 2).map((article) => (
+          {fakeArticlesData.slice(0, 3).map((article) => (
             <SplideSlide className="pb-10 sm:pb-0" key={article?.id}>
               <ArticleCard article={article} />
             </SplideSlide>
