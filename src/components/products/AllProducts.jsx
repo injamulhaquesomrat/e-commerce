@@ -8,7 +8,7 @@ const AllProducts = ({ allProducts, view }) => {
     <>
       <div
         className={cn(
-          "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 flex-col gap-4 col-span-9",
+          "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 flex-col gap-4 col-span-12 lg:col-span-9",
           view === "grid" && "grid",
           view === "list" && "flex"
         )}

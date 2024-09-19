@@ -53,8 +53,10 @@ const AllProductsContainer = () => {
         handleView={handleView}
         view={view}
       />
-      <div className="grid grid-cols-12 gap-4">
-        <FilterColumn />
+      <div className="grid grid-cols-12 gap-6">
+        <div className="hidden lg:block lg:col-span-3">
+          <FilterColumn />
+        </div>
         <AllProducts allProducts={products} view={view} />
       </div>
       <div className="mt-10">

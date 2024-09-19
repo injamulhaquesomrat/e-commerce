@@ -13,7 +13,7 @@ const ProductCard = ({ product, view }) => {
           view === "list" && "flex-row"
         )}
       >
-        <div className="relative">
+        <div className="relative basis-1/3">
           <Link href={`/products/${product.id}/product-details`}>
             <Image
               className="w-full aspect-square object-contain rounded-md"
@@ -30,7 +30,7 @@ const ProductCard = ({ product, view }) => {
             </div>
           )}
         </div>
-        <div className="space-y-2">
+        <div className="space-y-2 basis-2/3">
           <p className="text-xs md:text-sm font-medium line-clamp-1">
             <Link className="hover:text-primary duration-200" href={"#"}>
               {product?.brand}
