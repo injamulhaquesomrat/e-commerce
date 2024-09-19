@@ -2,8 +2,14 @@ import StarRating from "@/components/global/StarRating";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const ProductCard = ({ product, view }) => {
+  const pathname = usePathname();
+  if (pathname === "/homepage") {
+    view = "grid";
+  }
+
   return (
     <>
       <div

@@ -23,16 +23,21 @@ const ProductDetailsPage = ({ params }) => {
     <div>
       <Navbar />
       <Container>
-        <div className="flex flex-col lg:flex-row gap-5">
-          <div className="basis-1/3 p-4 ">
+        <div className="flex flex-col lg:flex-row items-center gap-5">
+          <div className="basis-1/2 p-4 ">
             <ProductCardCarousel productImages={product?.images} />
           </div>
-          <div className="basis-2/3">
+          <div className="basis-1/2">
             <ProductSpecs product={product} />
           </div>
         </div>
       </Container>
-      <ReviewsCarousel product={product} />
+      <Container className="pt-16">
+        <h6 className="text-xl md:text-3xl font-semibold">
+          Customer Feedbacks
+        </h6>
+        <ReviewsCarousel product={product} />
+      </Container>
       <Footer />
     </div>
   );

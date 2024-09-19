@@ -71,3 +71,7 @@
 .splide .splide__pagination__page.is-active {
   background: hsl(var(--primary));
 }
+
+.splide .splide__track--nav > .splide__list > .splide__slide.is-active {
+  border: 3px solid hsl(var(--secondary));
+}
