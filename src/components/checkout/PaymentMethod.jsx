@@ -36,7 +36,7 @@ const PaymentMethod = () => {
         <TabsList className="gap-4 h-fit">
           {dummyPaymentData.map((item) => (
             <TabsTrigger
-              className="border rounded flex flex-col justify-center"
+              className="rounded flex flex-col justify-center"
               key={item.id}
               value={item.value}
             >
@@ -48,10 +48,6 @@ const PaymentMethod = () => {
         {dummyPaymentData.map((item) => (
           <TabsContent key={item.id} value={item.value}>
             {item.content}
-            <br />
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
-            debitis voluptatibus deserunt quibusdam nulla. Laboriosam totam quae
-            impedit modi rem.
           </TabsContent>
         ))}
       </Tabs>

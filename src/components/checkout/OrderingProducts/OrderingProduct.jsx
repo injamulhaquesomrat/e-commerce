@@ -59,7 +59,7 @@ const OrderingProduct = ({ product }) => {
         </div>
       </div>
       <hr />
-      <div className="py-8 px-4">
+      <div className="p-4">
         <ul className="space-y-2">
           <li className="flex justify-between items-center">
             Subtotal:{" "}

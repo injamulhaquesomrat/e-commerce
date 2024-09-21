@@ -102,6 +102,36 @@ export const fakeCartData = [
   },
 ];
 
+export const fakeWishlistData = [
+  {
+    id: "1",
+    avatar: "https://placehold.co/50x50/png", // Avatar placeholder
+    avatarFallback: "W", // Fallback letter if the avatar fails
+    title: "Wireless Earbuds",
+    vendor: "Tech Store",
+    price: 99.99,
+    stock_status: "In Stock",
+  },
+  {
+    id: "2",
+    avatar: "https://placehold.co/50x50/png",
+    avatarFallback: "L",
+    title: "Laptop Stand",
+    vendor: "Office Supplies",
+    price: 49.99,
+    stock_status: "Low Stock",
+  },
+  {
+    id: "3",
+    avatar: "https://placehold.co/50x50/png",
+    avatarFallback: "S",
+    title: "Smartphone",
+    vendor: "Mobile Hub",
+    price: 799.99,
+    stock_status: "Out of Stock",
+  },
+];
+
 export const fakeCategoriesData = [
   {
     id: 1,

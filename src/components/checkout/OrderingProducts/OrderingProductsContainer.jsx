@@ -2,6 +2,7 @@ import React from "react";
 import OrderingProduct from "./OrderingProduct";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import ApplyCoupon from "../ApplyCoupon";
 const dummyOrderingProducts = [
   {
     id: "1",
@@ -52,6 +53,34 @@ const OrderingProductsContainer = () => {
           <OrderingProduct key={item.id} product={item} />
         ))}
       </div>
+      <ul className="space-y-2 px-4 py-8">
+        <li className="flex justify-between items-center">
+          Subtotal:{" "}
+          <p>
+            $<span className="font-bold">750</span>
+          </p>
+        </li>
+        <li className="flex justify-between items-center">
+          Tax:{" "}
+          <p>
+            $<span className="font-bold">100</span>
+          </p>
+        </li>
+        <li className="flex justify-between items-center">
+          Shipping fee:{" "}
+          <p>
+            $<span className="font-bold">87</span>
+          </p>
+        </li>
+        <li className="flex justify-between items-center">
+          <span className="font-bold">Total:</span>{" "}
+          <p>
+            $<span className="text-2xl font-bold">965.91</span>
+          </p>
+        </li>
+      </ul>
+      <Separator className="my-6" />
+      <ApplyCoupon />
     </div>
   );
 };

@@ -27,7 +27,7 @@ const Navbar = () => {
                 <ProfileDropdown />
               </li>
               <li className="ml-2 lg:ml-4 relative inline-block p-2 hover:scale-110 duration-200 dark:text-white">
-                <a className="" href="">
+                <a className="" href="/wishlist">
                   <svg
                     width="24"
                     height="24"
@@ -129,7 +129,7 @@ const Navbar = () => {
                 <ProfileDropdown />
               </li>
               <li className="ml-2 lg:ml-4 relative inline-block p-2 hover:scale-110 duration-200 dark:text-white">
-                <a className="" href="">
+                <a className="" href="/wishlist">
                   <svg
                     width="24"
                     height="24"

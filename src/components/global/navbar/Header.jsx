@@ -16,7 +16,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="hover:text-primary duration-300" href={"#"}>
+              <Link
+                className="hover:text-primary duration-300"
+                href={"/wishlist"}
+              >
                 Wishlist
               </Link>
             </li>
