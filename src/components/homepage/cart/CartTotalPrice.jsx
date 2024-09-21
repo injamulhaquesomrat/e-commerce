@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 import React from "react";
 
 const CartTotalPrice = () => {
@@ -36,9 +37,11 @@ const CartTotalPrice = () => {
           <p>$1474.66</p>
         </div>
         <div>
-          <Button className="w-full mt-10 rounded  md:text-base">
-            Proceed to checkout
-          </Button>
+          <Link href={"/checkout"}>
+            <Button className="w-full mt-10 rounded  md:text-base">
+              Proceed to checkout
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../Container";
 import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
 
 const Header = () => {
   let loggedIn = false;
@@ -8,7 +9,7 @@ const Header = () => {
     <div className="hidden md:block">
       <Container className="flex justify-between text-sm py-1 shadow-lg">
         <div>
-          <ul className="inline-flex gap-x-3">
+          <ul className="inline-flex gap-x-4">
             <li>
               <Link className="hover:text-primary duration-300" href={"#"}>
                 About Us
@@ -38,7 +39,7 @@ const Header = () => {
               </li>
             </ul>
           ) : (
-            <ul className="flex gap-2">
+            <ul className="flex gap-4">
               <li>
                 <Link
                   className="hover:text-primary duration-300"
