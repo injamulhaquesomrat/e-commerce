@@ -79,13 +79,13 @@ const CartContainerTable = ({ fakeCartData }) => {
 
       <div className="pt-10 flex flex-wrap gap-4 justify-center sm:justify-start ">
         <Link href={"/products"}>
-          <Button className="flex gap-2 bg-secondary text-black hover:text-white  duration-300  md:text-base">
+          <Button className="flex gap-2 bg-secondary dark:bg-primary text-black  hover:text-white  duration-300  md:text-base">
             <FaArrowLeftLong />
             Continue shopping
           </Button>
         </Link>
         <Link href={"/"}>
-          <Button className="flex gap-2 bg-secondary text-black hover:text-white duration-300  md:text-base">
+          <Button className="flex gap-2 bg-secondary dark:bg-primary text-black hover:text-white duration-300  md:text-base">
             <IoHomeOutline /> Back to home
           </Button>
         </Link>

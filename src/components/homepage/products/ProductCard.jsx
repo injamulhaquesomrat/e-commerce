@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 const ProductCard = ({ product, view }) => {
   const pathname = usePathname();
-  if (pathname === "/homepage") {
+  if (pathname === "/homepage" || "/cart") {
     view = "grid";
   }
 

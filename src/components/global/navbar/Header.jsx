@@ -3,10 +3,10 @@ import Container from "../Container";
 import Link from "next/link";
 
 const Header = () => {
-  let loggedIn = true;
+  let loggedIn = false;
   return (
     <div className="hidden md:block">
-      <Container className="flex justify-between text-xs py-1">
+      <Container className="flex justify-between text-sm py-1 shadow-lg">
         <div>
           <ul className="inline-flex gap-x-3">
             <li>
@@ -40,12 +40,18 @@ const Header = () => {
           ) : (
             <ul className="flex gap-2">
               <li>
-                <Link className="hover:text-primary duration-300" href={"#"}>
+                <Link
+                  className="hover:text-primary duration-300"
+                  href={"/login"}
+                >
                   Login
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-primary duration-300" href={"#"}>
+                <Link
+                  className="hover:text-primary duration-300"
+                  href={"/signup"}
+                >
                   Register
                 </Link>
               </li>
