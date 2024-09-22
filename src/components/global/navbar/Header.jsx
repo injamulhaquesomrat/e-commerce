@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "../Container";
 import Link from "next/link";
-import { Separator } from "@/components/ui/separator";
 
 const Header = () => {
   let loggedIn = false;
@@ -11,7 +10,10 @@ const Header = () => {
         <div>
           <ul className="inline-flex gap-x-4">
             <li>
-              <Link className="hover:text-primary duration-300" href={"#"}>
+              <Link
+                className="hover:text-primary duration-300"
+                href={"/about-us"}
+              >
                 About Us
               </Link>
             </li>
@@ -24,7 +26,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="hover:text-primary duration-300" href={"#"}>
+              <Link
+                className="hover:text-primary duration-300"
+                href={"/orders/tracking"}
+              >
                 Order Tracking
               </Link>
             </li>
