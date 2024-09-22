@@ -37,6 +37,9 @@ const FilterProducts = ({ handleSubmit, handleView, view }) => {
     // Cleanup event listener on component unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  console.log(view);
+
   return (
     <div className="flex items-center justify-between pb-6">
       <div>
@@ -52,10 +55,8 @@ const FilterProducts = ({ handleSubmit, handleView, view }) => {
                 Filter
               </Button>
             </SheetTrigger>
-            <SheetContent side="left">
-              <div className="mt-6 overflow-auto max-h-[calc(100vh-5rem)]">
-                <FilterColumn />
-              </div>
+            <SheetContent side="left" className="overflow-auto px-3 py-12">
+              <FilterColumn />
             </SheetContent>
           </Sheet>
         </div>

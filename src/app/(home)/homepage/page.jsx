@@ -1,3 +1,4 @@
+import FloatingDockContainer from "@/components/global/floating-dock/FloatingDockContainer";
 import Footer from "@/components/global/footer/Footer";
 import Header from "@/components/global/navbar/Header";
 import Navbar from "@/components/global/navbar/Navbar";
@@ -11,10 +12,11 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="relative">
       <Header />
       <Navbar />
       <Hero />
+      <FloatingDockContainer />
       <BrowseByCategory />
       <BestSellingProducts />
       <FeatureBrandsContainer />

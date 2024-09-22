@@ -1,12 +1,11 @@
-"use client";
-import { navItems } from "@/lib/fake-data";
+import { catergoriesItems } from "@/lib/fake-data";
 import Link from "next/link";
 import React from "react";
 
-const Menus = () => {
+const CategoriesMenus = () => {
   return (
     <>
-      {navItems.map((item) => (
+      {catergoriesItems.map((item) => (
         <Link key={item.id} href={item.link}>
           <li className={`p-4 border-b uppercase`}>{item.name}</li>
         </Link>
@@ -15,4 +14,4 @@ const Menus = () => {
   );
 };
 
-export default Menus;
+export default CategoriesMenus;

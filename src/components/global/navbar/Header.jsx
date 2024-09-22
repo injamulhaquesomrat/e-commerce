@@ -5,7 +5,7 @@ import Link from "next/link";
 const Header = () => {
   let loggedIn = false;
   return (
-    <div className="hidden md:block">
+    <div className="hidden lg:block">
       <Container className="flex justify-between text-sm py-1 shadow-lg">
         <div>
           <ul className="inline-flex gap-x-4">

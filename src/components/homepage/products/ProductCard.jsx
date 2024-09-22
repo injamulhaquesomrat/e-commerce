@@ -6,7 +6,8 @@ import { usePathname } from "next/navigation";
 
 const ProductCard = ({ product, view }) => {
   const pathname = usePathname();
-  if (pathname === "/homepage" || "/cart") {
+
+  if (pathname.includes("/homepage" || "/cart")) {
     view = "grid";
   }
 
@@ -19,24 +20,24 @@ const ProductCard = ({ product, view }) => {
           view === "list" && "flex-row"
         )}
       >
-        <div className="relative basis-1/3">
+        <div className="relative basis-2/5 md:basis-1/3">
           <Link href={`/products/${product.id}/product-details`}>
             <Image
-              className="w-full aspect-square object-contain rounded-md"
-              // src={"https://placehold.co/300x300/png"}
-              src={product?.thumbnail}
+              className="w-full h-full aspect-square object-contain p-1 rounded-md bg-white dark:bg-black"
+              src={"https://placehold.co/300x300/png"}
+              // src={product?.thumbnail}
               height={900}
               width={900}
               alt={product.title}
             />
           </Link>
           {product?.discountPercentage >= 1 && (
-            <div className="bg-red-500 absolute px-1 font-medium text-white py-.5 text-sm rounded top-2 right-2">
+            <div className="bg-red-500 absolute px-1 font-medium text-white py-.5 text-xs md:text-sm rounded top-2 right-2">
               -{product?.discountPercentage.toFixed(0)}%
             </div>
           )}
         </div>
-        <div className="space-y-2 basis-2/3">
+        <div className="space-y-2 basis-3/5 md:basis-2/3">
           <p className="text-xs md:text-sm font-medium line-clamp-1">
             <Link className="hover:text-primary duration-200" href={"#"}>
               {product?.brand}

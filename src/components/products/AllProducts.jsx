@@ -8,13 +8,20 @@ const AllProducts = ({ allProducts, view }) => {
     <>
       <div
         className={cn(
-          "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 flex-col gap-4 col-span-12 lg:col-span-9",
+          "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 flex-col gap-4 col-span-12 lg:col-span-8 xl:col-span-9",
           view === "grid" && "grid",
-          view === "list" && "flex"
+          view === "list" && "flex xl:grid"
         )}
       >
         {allProducts.map((product) => (
-          <div key={product.id} className="col-span-1">
+          <div
+            key={product.id}
+            className={cn(
+              "col-span-1",
+              view === "grid" && "col-span-1",
+              view === "list" && "col-span-2"
+            )}
+          >
             <ProductCard product={product} view={view} />
           </div>
         ))}

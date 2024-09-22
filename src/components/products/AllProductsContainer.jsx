@@ -37,6 +37,8 @@ const AllProductsContainer = () => {
   };
 
   const handleView = (value) => {
+    console.log(value);
+
     if (value === "grid") {
       setView("grid");
     }
@@ -47,17 +49,16 @@ const AllProductsContainer = () => {
 
   return (
     <div className="mt-6">
-      {/* <ProductSearch handleSubmit={handleSubmit} /> */}
       <FilterProducts
         handleSubmit={handleSubmit}
         handleView={handleView}
         view={view}
       />
       <div className="grid grid-cols-12 gap-6">
-        <div className="hidden lg:block lg:col-span-3">
+        <div className="hidden lg:block lg:col-span-4 xl:col-span-3">
           <FilterColumn />
         </div>
-        <AllProducts allProducts={products} view={view} />
+        <AllProducts allProducts={products} view={view} setView={setView} />
       </div>
       <div className="mt-10">
         <Pagination>

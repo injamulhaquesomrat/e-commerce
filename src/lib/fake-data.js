@@ -11,7 +11,7 @@ import {
   Soup,
 } from "lucide-react";
 
-export const navItems = [
+export const catergoriesItems = [
   {
     id: 1,
     name: "Home",
@@ -51,6 +51,48 @@ export const navItems = [
     id: 8,
     name: "Dairy",
     link: "/dairy",
+  },
+];
+export const navItems = [
+  {
+    id: 1,
+    name: "Home",
+    link: "/homepage",
+  },
+  {
+    id: 2,
+    name: "Stores",
+    link: "/stores",
+  },
+  {
+    id: 3,
+    name: "Blog",
+    link: "/blog",
+  },
+  {
+    id: 4,
+    name: "FAQs",
+    link: "/faqs",
+  },
+  {
+    id: 5,
+    name: "Contact",
+    link: "/contact",
+  },
+  {
+    id: 6,
+    name: "About Us",
+    link: "/about-us",
+  },
+  {
+    id: 7,
+    name: "Wishlist",
+    link: "/wishlist",
+  },
+  {
+    id: 8,
+    name: "Order Tracking",
+    link: "/orders/tracking",
   },
 ];
 

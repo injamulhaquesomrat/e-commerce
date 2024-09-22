@@ -25,7 +25,7 @@ const ProductSuggestions = () => {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           {products.slice(0, 6).map((product, id) => (
             <div key={id} className="col-span-1">
-              <ProductCard product={product} />
+              <ProductCard product={product} view="grid" />
             </div>
           ))}
         </div>
