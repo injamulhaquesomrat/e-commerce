@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <footer>
       <section className={cn("pt-8 pb-4 md:pt-12 md:pb-6")}>
-        <Container className="grid gap-12 md:grid-cols-[1.5fr_0.5fr_0.5fr] pb-4">
+        <Container className="grid gap-12 md:grid-cols-[1fr_0.5fr_0.5fr_0.5fr] pb-4">
           <div className="not-prose flex flex-col gap-6">
             <Link href="/" className="uppercase text-lg font-semibold">
               Tukitaki Bazar
@@ -27,16 +27,27 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <h5>Website</h5>
-            <Link href="/">Blog</Link>
-            <Link href="/">Authors</Link>
-            <Link href="/">Categories</Link>
+            <h5 className="font-medium">Customer Service</h5>
+            <Link href="/">Shipping Info</Link>
+            <Link href="/">How to buy</Link>
+            <Link href="/">How to track</Link>
+            <Link href="/">Support center & FAQ</Link>
+            <Link href="/">Report suspicios activity</Link>
           </div>
           <div className="flex flex-col gap-2">
-            <h5>Legal</h5>
-            <Link href="/privacy-policy">Privacy Policy</Link>
-            <Link href="/terms-of-service">Terms of Service</Link>
+            <h5 className="font-medium">Company Info</h5>
+            <Link href="/">About Us</Link>
+            <Link href="/privacy-policy">Affiliate: Earn commission</Link>
+            <Link href="/terms-of-service">Careers</Link>
+            <Link href="/">Contact Us</Link>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h5 className="font-medium">Help</h5>
+            <Link href="/">Terms of use</Link>
+            <Link href="/">Terms & conditions</Link>
+            <Link href="/">Return & refund policy</Link>
             <Link href="/cookie-policy">Cookie Policy</Link>
+            <Link href="/">Partner with Tukitaki</Link>
           </div>
         </Container>
         <Container className="not-prose flex flex-col justify-between gap-6 border-t pt-4 md:flex-row md:items-center md:gap-2">
@@ -52,8 +63,13 @@ export default function Footer() {
             </Button>
           </div>
           <p className="text-muted-foreground">
-            © <a href="https://github.com/brijr/components">brijr/components</a>
-            . All rights reserved. 2024-present.
+            © Copyright 2024 All rights reserved by{" "}
+            <a
+              className="hover:underline"
+              href="https://e-commerce-demo-inj.netlify.app"
+            >
+              tukitaki bazar
+            </a>{" "}
           </p>
         </Container>
       </section>
