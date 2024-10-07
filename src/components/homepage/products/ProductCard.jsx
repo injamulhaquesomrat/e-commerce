@@ -15,7 +15,7 @@ const ProductCard = ({ product, view }) => {
     <>
       <div
         className={cn(
-          "border p-4 md:p-6 flex gap-4 hover:drop-shadow-md hover:shadow-md duration-300 rounded bg-secondary",
+          "border p-4 md:p-6 flex gap-4 hover:drop-shadow-md hover:shadow-md dark:shadow-secondary duration-300 rounded bg-secondary",
           view === "grid" && "flex-col",
           view === "list" && "flex-row"
         )}
